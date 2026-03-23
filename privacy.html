@@ -1,147 +1,125 @@
 <!doctype html>
 <html lang="en" class="h-100" data-bs-theme="auto">
-  <head><script src="./color-modes.js"></script>
-
+  <head>
+    <script src="./color-modes.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="Privacy Policy - BLE Sense">
     <meta name="author" content="Junyi">
-    <meta name="generator" content="Hugo 0.122.0">
     <title>Privacy Policy - BLE Sense</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sticky-footer/">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
-
-<link href="./bootstrap.min.css" rel="stylesheet">
+    <link href="./bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
+      :root {
+        --accent: #6366f1;
+        --text-primary: #18181b;
+        --text-muted: #71717a;
+        --border: #e4e4e7;
+        --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      [data-bs-theme="dark"] {
+        --text-primary: #fafafa;
+        --text-muted: #a1a1aa;
+        --border: #27272a;
+      }
+      * { font-family: 'Manrope', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+      body { color: var(--text-primary); }
+      .content { max-width: 640px; margin: 0 auto; padding: 0 24px; }
+
+      .navbar-custom {
+        backdrop-filter: saturate(180%) blur(20px);
+        -webkit-backdrop-filter: saturate(180%) blur(20px);
+        background: rgba(var(--bs-body-bg-rgb), 0.85);
+        border-bottom: 1px solid var(--border);
+      }
+      .navbar-brand { font-weight: 800; font-size: 1.1rem; letter-spacing: -0.5px; color: var(--text-primary); }
+      .navbar-brand:hover { color: var(--text-primary); }
+      .nav-link { font-weight: 500; font-size: 0.85rem; color: var(--text-muted) !important; transition: color 0.2s; }
+      .nav-link:hover { color: var(--text-primary) !important; }
+
+      .legal-header { padding: 140px 0 60px; }
+      .legal-header h1 { font-size: 2.2rem; font-weight: 800; letter-spacing: -1px; margin-bottom: 12px; }
+      .legal-date { font-size: 0.8rem; font-weight: 600; color: var(--accent); }
+
+      .legal-content h3 {
+        font-weight: 700;
+        font-size: 1rem;
+        margin-top: 2.5rem;
+        margin-bottom: 8px;
+        letter-spacing: -0.3px;
+      }
+      .legal-content p {
+        color: var(--text-muted);
+        line-height: 1.85;
+        font-size: 0.92rem;
+      }
+      .legal-content code {
+        font-size: 0.85rem;
+        background: rgba(99,102,241,0.08);
+        padding: 2px 6px;
+        border-radius: 3px;
       }
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-
-      .b-example-divider {
-        width: 100%;
-        height: 3rem;
-        background-color: rgba(0, 0, 0, .1);
-        border: solid rgba(0, 0, 0, .15);
-        border-width: 1px 0;
-        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-      }
-
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
-
-      .bi {
-        vertical-align: -.125em;
-        fill: currentColor;
-      }
-
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
-
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
-
-      .btn-bd-primary {
-        --bd-violet-bg: #712cf9;
-        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
-
-        --bs-btn-font-weight: 600;
-        --bs-btn-color: var(--bs-white);
-        --bs-btn-bg: var(--bd-violet-bg);
-        --bs-btn-border-color: var(--bd-violet-bg);
-        --bs-btn-hover-color: var(--bs-white);
-        --bs-btn-hover-bg: #6528e0;
-        --bs-btn-hover-border-color: #6528e0;
-        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-        --bs-btn-active-color: var(--bs-btn-hover-color);
-        --bs-btn-active-bg: #5a23c8;
-        --bs-btn-active-border-color: #5a23c8;
-      }
-
-      .bd-mode-toggle {
-        z-index: 1500;
-      }
-
-      .bd-mode-toggle .dropdown-menu .active .bi {
-        display: block !important;
-      }
+      footer { border-top: 1px solid var(--border); padding: 40px 0; margin-top: 80px; }
+      footer a { color: var(--text-muted); text-decoration: none; font-size: 0.85rem; transition: color 0.2s; }
+      footer a:hover { color: var(--text-primary); }
     </style>
-
-    
-    <!-- Custom styles for this template -->
-    <link href="sticky-footer.css" rel="stylesheet">
   </head>
+
   <body class="d-flex flex-column h-100">
-    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
-      <symbol id="check2" viewBox="0 0 16 16">
-        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
-      </symbol>
-      <symbol id="circle-half" viewBox="0 0 16 16">
-        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
-      </symbol>
-      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
-        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
-        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
-      </symbol>
-      <symbol id="sun-fill" viewBox="0 0 16 16">
-        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
-      </symbol>
-    </svg>
 
-<!-- Begin page content -->
-<main class="flex-shrink-0">
-  <div class="container">
-    <h1 class="mt-5">Privacy Policy</h1>
-    <p class="lead"><b>Last Update:</b> Aug 18, 2024</p>
-    <p>Thanks for choosing BLE Sense! Your privacy is very important to us.</p>
-    <p>This Privacy Policy outlines how we handle your information when you use our service.</p>
-    <h3>Data Collection</h3>
-    <p>We do not collect, store, or process any personal information, data, or usage statistics. Our service is designed to operate without requiring any data from you.</p>
-    <h3>Third-Party Services</h3>
-    <p>Since we do not collect any data, we do not share information with any third-party services.</p>
-    <h3>Cookies and Tracking</h3>
-    <p>We do not use cookies, tracking technologies, or any other method to monitor or collect data on how you use our service.</p>
-    <h3>Changes to This Policy</h3>
-    <p>We reserve the right to update this Privacy Policy. However, since we do not collect any data, changes are unlikely. Any updates will be posted here with the date of the last revision.</p>
-    <h3>Contact Us</h3>
-    <p>If you have any questions or concerns about this Privacy Policy, please contact us at <code>hji200914+dev@gmail.com</code><p></p>
+    <nav class="navbar navbar-expand-md navbar-custom fixed-top py-2">
+      <div class="content d-flex align-items-center justify-content-between w-100" style="max-width:960px">
+        <a class="navbar-brand" href="/">BLE Sense</a>
+        <div class="d-flex gap-3 align-items-center">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="https://github.com/BLE-Sense">GitHub</a>
+        </div>
+      </div>
+    </nav>
 
-  </div>
-</main>
+    <div class="legal-header">
+      <div class="content">
+        <h1>Privacy Policy</h1>
+        <span class="legal-date">Last updated Aug 18, 2024</span>
+      </div>
+    </div>
 
-<footer class="footer mt-auto py-3 bg-body-tertiary">
-  <div class="container">
-    <span class="text-body-secondary">BLE Sense, 2024, Junyi. <a href="index.html">Home</a> · <a href="agreement.html">User Agreement</a></span>
-  </div>
-</footer>
-<script src="./bootstrap.bundle.min.js"></script>
+    <main class="flex-shrink-0">
+      <div class="content legal-content">
+        <p>Thanks for choosing BLE Sense. Your privacy is important to us. This policy outlines how we handle your information.</p>
 
-    </body>
+        <h3>Data Collection</h3>
+        <p>We do not collect, store, or process any personal information, data, or usage statistics. The app operates entirely on your device.</p>
+
+        <h3>Third-Party Services</h3>
+        <p>We do not share information with any third-party services.</p>
+
+        <h3>Cookies and Tracking</h3>
+        <p>We do not use cookies, tracking technologies, or any other method to monitor how you use the app.</p>
+
+        <h3>Changes to This Policy</h3>
+        <p>We reserve the right to update this policy. Updates will be posted here with the date of the last revision.</p>
+
+        <h3>Contact</h3>
+        <p>Questions about this policy? Reach us at <code>hji200914+dev@gmail.com</code></p>
+      </div>
+    </main>
+
+    <footer class="mt-auto">
+      <div class="content d-flex justify-content-between align-items-center">
+        <span style="color:var(--text-muted);font-size:0.8rem">&copy; 2024 Junyi</span>
+        <div class="d-flex gap-3">
+          <a href="index.html">Home</a>
+          <a href="agreement.html">User Agreement</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./bootstrap.bundle.min.js"></script>
+  </body>
 </html>
-

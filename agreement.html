@@ -1,74 +1,131 @@
 <!doctype html>
 <html lang="en" class="h-100" data-bs-theme="auto">
-  <head><script src="./color-modes.js"></script>
-
+  <head>
+    <script src="./color-modes.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="User Agreement - BLE Sense">
     <meta name="author" content="Junyi">
     <title>User Agreement - BLE Sense</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
     <link href="./bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
+      :root {
+        --accent: #6366f1;
+        --text-primary: #18181b;
+        --text-muted: #71717a;
+        --border: #e4e4e7;
+        --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      [data-bs-theme="dark"] {
+        --text-primary: #fafafa;
+        --text-muted: #a1a1aa;
+        --border: #27272a;
+      }
+      * { font-family: 'Manrope', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+      body { color: var(--text-primary); }
+      .content { max-width: 640px; margin: 0 auto; padding: 0 24px; }
+
+      .navbar-custom {
+        backdrop-filter: saturate(180%) blur(20px);
+        -webkit-backdrop-filter: saturate(180%) blur(20px);
+        background: rgba(var(--bs-body-bg-rgb), 0.85);
+        border-bottom: 1px solid var(--border);
+      }
+      .navbar-brand { font-weight: 800; font-size: 1.1rem; letter-spacing: -0.5px; color: var(--text-primary); }
+      .navbar-brand:hover { color: var(--text-primary); }
+      .nav-link { font-weight: 500; font-size: 0.85rem; color: var(--text-muted) !important; transition: color 0.2s; }
+      .nav-link:hover { color: var(--text-primary) !important; }
+
+      .legal-header { padding: 140px 0 60px; }
+      .legal-header h1 { font-size: 2.2rem; font-weight: 800; letter-spacing: -1px; margin-bottom: 12px; }
+      .legal-date { font-size: 0.8rem; font-weight: 600; color: var(--accent); }
+
+      .legal-content h3 {
+        font-weight: 700;
+        font-size: 1rem;
+        margin-top: 2.5rem;
+        margin-bottom: 8px;
+        letter-spacing: -0.3px;
+      }
+      .legal-content p {
+        color: var(--text-muted);
+        line-height: 1.85;
+        font-size: 0.92rem;
+      }
+      .legal-content code {
+        font-size: 0.85rem;
+        background: rgba(99,102,241,0.08);
+        padding: 2px 6px;
+        border-radius: 3px;
       }
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
+      footer { border-top: 1px solid var(--border); padding: 40px 0; margin-top: 80px; }
+      footer a { color: var(--text-muted); text-decoration: none; font-size: 0.85rem; transition: color 0.2s; }
+      footer a:hover { color: var(--text-primary); }
     </style>
-
-    <!-- Custom styles for this template -->
-    <link href="sticky-footer.css" rel="stylesheet">
   </head>
+
   <body class="d-flex flex-column h-100">
 
-<!-- Begin page content -->
-<main class="flex-shrink-0">
-  <div class="container">
-    <h1 class="mt-5">User Agreement</h1>
-    <p class="lead"><b>Last Update:</b> Aug 18, 2024</p>
-    <p>Welcome to BLE Sense! By using our app, you agree to the following terms.</p>
+    <nav class="navbar navbar-expand-md navbar-custom fixed-top py-2">
+      <div class="content d-flex align-items-center justify-content-between w-100" style="max-width:960px">
+        <a class="navbar-brand" href="/">BLE Sense</a>
+        <div class="d-flex gap-3 align-items-center">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="https://github.com/BLE-Sense">GitHub</a>
+        </div>
+      </div>
+    </nav>
 
-    <h3>Acceptance of Terms</h3>
-    <p>By downloading, installing, or using BLE Sense, you agree to be bound by this User Agreement. If you do not agree, please do not use the app.</p>
+    <div class="legal-header">
+      <div class="content">
+        <h1>User Agreement</h1>
+        <span class="legal-date">Last updated Aug 18, 2024</span>
+      </div>
+    </div>
 
-    <h3>Use of the App</h3>
-    <p>BLE Sense is provided for discovering, connecting to, and exploring Bluetooth Low Energy (BLE) devices. You agree to use the app only for lawful purposes and in accordance with all applicable laws and regulations.</p>
+    <main class="flex-shrink-0">
+      <div class="content legal-content">
+        <p>By using BLE Sense, you agree to the following terms.</p>
 
-    <h3>Intellectual Property</h3>
-    <p>All content, design, and code within BLE Sense are the intellectual property of the developer. You may not copy, modify, distribute, or reverse-engineer any part of the app without prior written consent.</p>
+        <h3>Acceptance of Terms</h3>
+        <p>By downloading, installing, or using BLE Sense, you agree to be bound by this agreement. If you do not agree, please do not use the app.</p>
 
-    <h3>Disclaimer of Warranties</h3>
-    <p>BLE Sense is provided "as is" without warranty of any kind, express or implied. We do not guarantee that the app will be error-free or uninterrupted.</p>
+        <h3>Use of the App</h3>
+        <p>BLE Sense is provided for discovering, connecting to, and exploring Bluetooth Low Energy devices. You agree to use the app only for lawful purposes and in accordance with all applicable laws.</p>
 
-    <h3>Limitation of Liability</h3>
-    <p>In no event shall the developer be liable for any indirect, incidental, special, or consequential damages arising out of or in connection with the use of BLE Sense.</p>
+        <h3>Intellectual Property</h3>
+        <p>All content, design, and code within BLE Sense are the intellectual property of the developer. You may not copy, modify, distribute, or reverse-engineer any part of the app without prior written consent.</p>
 
-    <h3>Changes to This Agreement</h3>
-    <p>We reserve the right to update this User Agreement at any time. Any changes will be posted here with the date of the last revision.</p>
+        <h3>Disclaimer of Warranties</h3>
+        <p>BLE Sense is provided "as is" without warranty of any kind, express or implied. We do not guarantee that the app will be error-free or uninterrupted.</p>
 
-    <h3>Contact Us</h3>
-    <p>If you have any questions about this User Agreement, please contact us at <code>hji200914+dev@gmail.com</code></p>
+        <h3>Limitation of Liability</h3>
+        <p>In no event shall the developer be liable for any indirect, incidental, special, or consequential damages arising from the use of BLE Sense.</p>
 
-  </div>
-</main>
+        <h3>Changes to This Agreement</h3>
+        <p>We may update this agreement at any time. Changes will be posted here with the date of the last revision.</p>
 
-<footer class="footer mt-auto py-3 bg-body-tertiary">
-  <div class="container">
-    <span class="text-body-secondary">BLE Sense, 2024, Junyi. <a href="index.html">Home</a> · <a href="privacy.html">Privacy Policy</a></span>
-  </div>
-</footer>
-<script src="./bootstrap.bundle.min.js"></script>
+        <h3>Contact</h3>
+        <p>Questions? Reach us at <code>hji200914+dev@gmail.com</code></p>
+      </div>
+    </main>
 
-    </body>
+    <footer class="mt-auto">
+      <div class="content d-flex justify-content-between align-items-center">
+        <span style="color:var(--text-muted);font-size:0.8rem">&copy; 2024 Junyi</span>
+        <div class="d-flex gap-3">
+          <a href="index.html">Home</a>
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./bootstrap.bundle.min.js"></script>
+  </body>
 </html>
